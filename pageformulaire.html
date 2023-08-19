@@ -1,159 +1,175 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <style type="text/css">
-            nav{
-        background-color:transparent;
-      
-        display: flex;
-        justify-content:space-around;
-        padding:1 rem 0.5em;
-  position: sticky;
-margin-top: 0;
+  <style type="text/css">
+    nav {
+      background-color: transparent;
+
+      display: flex;
+      justify-content: space-around;
+      padding: 1 rem 0.5em;
+      position: sticky;
+      margin-top: 0;
     }
-    nav li{
-        display: inline-block;
-        padding:8px;
-     
-        margin-right: 100px;
-        position: sticky;
-  
- 
+
+    nav li {
+      display: inline-block;
+      padding: 8px;
+
+      margin-right: 100px;
+      position: sticky;
+
+
     }
+
     #navelts li>a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color:darkblue;
-   text-align: center;
-   font-size:small;
-   font-family:'Times New Roman', Times, serif;
-   font-style:italic;
-   font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: darkblue;
+      text-align: center;
+      font-size: small;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-weight: bold;
 
-}
-#navelts li>a:hover{
-   font-weight:900 ;
-   font-size: larger;
-}
-   
-    *{
-      box-sizing:border-box;
     }
-       .wrapper{
-    width:800 px;
-    margin:5% auto;
-    background-color:transparent;
-   
-}
-body{
-    background-color: rgba(128, 128, 128, 0.327);
-}
-.msg_area{
-    display:flex;
-  flex-direction: column;
-    order:2;
-}
-.msg_area> textarea{
-    flex:1;
-    min-width: 18em;
-    background-color: aliceblue;
-    color:black;
-    padding:2em;
-    border-radius: 10px;
-    box-shadow: 0 0 4px -1px grey;
-}
-.form_area{
-    display:flex;
-  
-    border-radius: 0px;
-    padding: 3em;
-   background-color:transparent;
-}
-.details_area{
-    flex:1;
-    order:1;
-    margin-right: 2em;
-}
-.details_area input{
-    width: 100%;
-    height: 10%;
-    background-color: aliceblue;
-    color:black;
-    border: solid 1px grey;
-    border-radius: 4px;
-    box-shadow: 0 0 8px -1px grey;
-   
-}
-   .details_area button{
-       padding:1rem 2rem;
-       margin-top: 1em;
-       background-color:rgba(0, 0, 139, 0.578);
-       border:0 ;
-       border-radius: 3px;
-       letter-spacing: 1px;
-       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 1rem;
-        color:beige;
-        transition: 0.3s;
-        cursor: pointer;
-      }
-        .details_area button:hover{
-            background-color:rgba(0, 0, 139, 0.8);
-        }
-      label{
-          color:darkblue;
-          line-height: 40px;
-          font-family: sans-serif;
-      }
 
- 
-        </style>
-    <title>contact</title>
-   
+    #navelts li>a:hover {
+      font-weight: 900;
+      font-size: larger;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      width: 800 px;
+      margin: 5% auto;
+      background-color: transparent;
+
+    }
+
+    body {
+      background-color: rgba(128, 128, 128, 0.327);
+    }
+
+    .msg_area {
+      display: flex;
+      flex-direction: column;
+      order: 2;
+    }
+
+    .msg_area>textarea {
+      flex: 1;
+      min-width: 18em;
+      background-color: aliceblue;
+      color: black;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 4px -1px grey;
+    }
+
+    .form_area {
+      display: flex;
+
+      border-radius: 0px;
+      padding: 3em;
+      background-color: transparent;
+    }
+
+    .details_area {
+      flex: 1;
+      order: 1;
+      margin-right: 2em;
+    }
+
+    .details_area input {
+      width: 100%;
+      height: 10%;
+      background-color: aliceblue;
+      color: black;
+      border: solid 1px grey;
+      border-radius: 4px;
+      box-shadow: 0 0 8px -1px grey;
+
+    }
+
+    .details_area button {
+      padding: 1rem 2rem;
+      margin-top: 1em;
+      background-color: rgba(0, 0, 139, 0.578);
+      border: 0;
+      border-radius: 3px;
+      letter-spacing: 1px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 1rem;
+      color: beige;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .details_area button:hover {
+      background-color: rgba(0, 0, 139, 0.8);
+    }
+
+    label {
+      color: darkblue;
+      line-height: 40px;
+      font-family: sans-serif;
+    }
+  </style>
+  <title>contact</title>
+
 </head>
+
 <body>
-    <nav> <ul>
-        <div id="navelts">
-          
+  <nav>
+    <ul>
+      <div id="navelts">
+
         <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page d'acceuil.html">acceuil</a></li>
-    
-       
-         <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagehtml.html">html</a></li>
-        
-         <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagecss.html" >css</a></li>
-        
-          <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page javascript.html" >javascript</a></li>
-         
-          <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\pageformulaire.html" >contacter  nous</a></li>
-        </div>
-          </ul></nav>
-    
 
 
-    <div class="wrapper">
-<form action="" class="form_area" >
-    
-  <div class=" msg_area">
-    <label for="msg">Message</label>
-    <textarea id="msg"></textarea>
+        <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagehtml.html">html</a></li>
+
+        <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagecss.html">css</a></li>
+
+        <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page javascript.html">javascript</a></li>
+
+        <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\pageformulaire.html">contacter nous</a></li>
+      </div>
+    </ul>
+  </nav>
+
+
+
+  <div class="wrapper">
+    <form action="" class="form_area">
+
+      <div class=" msg_area">
+        <label for="msg">Message</label>
+        <textarea id="msg"></textarea>
+      </div>
+
+
+      <div class="details_area">
+        <label for="name">Nom</label>
+        <input type="text" id="name">
+
+        <label for="townborn">compte facebook</label>
+        <input type="text" id="townborn">
+
+        <label for="email">Address email</label>
+        <input type="email" id="email">
+
+        <button type="submit">valider</button>
+      </div>
+
+
+    </form>
   </div>
- 
+</body>
 
-    <div class="details_area">
-    <label for="name">Nom</label>
-    <input type="text" id="name">
-
-    <label for="townborn">compte facebook</label>
-    <input type="text" id="townborn">
-
-    <label for="email">Address email</label>
-    <input type="email" id="email"> 
-
-    <button type="submit">valider</button>
-  </div>
-    
-  
-</form>
-</div>
-</body> 
 </html>
