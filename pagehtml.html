@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html c'est quoi</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            p{
+     font-family: 'Times New Roman', Times, serif;
+     font-style: italic;
+  
+   }
+            nav{
+        background-color:rgba(245, 245, 220, 0.307);
+    
+        display: flex;
+        justify-content:space-around;
+        padding:1.5rem 0.5em;
+  position: sticky;
+  top: 0;
+    }
+    nav li{
+        display: inline-block;
+        padding:8px;
+        margin-right: 100px;
+        position: sticky;
+  
+ 
+    }
+    #navelts li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:darkblue;
+   text-align: center;
+   font-size:small;
+   font-family:'Times New Roman', Times, serif;
+   font-style:italic;
+   font-weight: bold;
+
+}
+#navelts li>a:hover{
+   font-weight:900 ;
+   font-size: larger;
+}
+          
+          #main{
+             display: flex;
+             flex-direction: column;
+            }
+          header{
+               padding: 5%;
+                background-color:rgba(128, 128, 128, 0.327);
+         
+                margin: 0;
+              
+            }
+          
+           footer{
+              padding: 5%;
+                background-color:rgba(128, 128, 128, 0.327);
+              
+            }
+            *{
+    box-sizing:border-box;
+  }
+  h1{
+      color:darkblue;
+      font-family: 'Times New Roman', Times, serif;
+      display: flex;
+      justify-content: center;
+  }
+  #parag{
+      display: flex;
+      justify-content: center;
+      color: darkblue;
+      font-family:'Times New Roman', Times, serif;
+      font-size: larger;
+  }
+  h3{
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  h2{
+       color: darkblue;
+       font-style: italic;
+       font-family: 'Times New Roman', Times, serif;
+   }
+  #foot{
+      display: flex;
+      justify-content: space-around;
+      color:darkblue;
+      font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+    }
+    ul li {
+     list-style: none;
+ 
+   }
+   li >a {
+    color:darkblue;
+     text-decoration: none;
+   }
+   #sec{
+       display:inline-block;
+      }
+    #sec article{
+   padding:100px;
+   border-radius:5px;
+   margin: 15px;
+   text-align:left;
+   border: 1px solid ;
+   box-shadow: 2px 2px 2px 2px grey;
+   background-color: rgba(245, 245, 220, 0.307);
+
+
+   }
+   @media screen and (max-width : 800px){
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width : 760px){
+    .cards{
+        width:80%;
+        margin: 0 auto;
+    }
+    .cards{
+        flex-direction: column;
+    }
+}
+   @media screen and (max-width: 575px) {
+  .cards {
+    width: 90%;
+  }
+  section {
+    width: 100vw;
+  }
+  h1 {
+    margin: 0;
+    padding: 0em 0em;
+  }
+  header {
+    padding: 1rem;
+  }
+  
+  #foot {
+      flex-direction: column;
+      gap: 1.2rem;
+      margin: .5rem 2rem;
+  }
+  
+  nav li {
+    display: block;
+  }
+}
+        </style>
+
+    </head>
+    <body>
+        <nav> <ul>
+            <div id="navelts">
+              
+            <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page d'acceuil.html">acceuil</a></li>
+        
+           
+             <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagehtml.html">html</a></li>
+            
+             <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagecss.html" >css</a></li>
+            
+              <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page javascript.html" >javascript</a></li>
+             
+              <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\pageformulaire.html" >contacter  nous</a></li>
+            </div>
+              </ul></nav>
+        
+        <header>
+            <h1>HTML C'EST QUOI?</h1>
+            <p id="parag">Le HTML n'est pas un langage de programmation. On parle plutôt de balisage de texte. HTML est l'acronyme de Hyper Text Mark-up Language. HyperText est un système qui contient des hyperliens ( pouvoir accéder à des documents externes via un lien externe )</p>
+
+        </header>
+        <section id="sec" >
+           <article>
+               <H2>CREER UNE PAGE WEB</H2><BR>
+                <h3>  CREER UN FICHIER.HTML</h3><BR>
+                <P>Pour créer une page HTML ouvrez votre éditeur de texte préféré ( Notepad++ par exemple ) ; créez un nouveau fichier et copiez coller le code suivant:</P><br>
+            <p>&lt!DOCTYPE html&gt<br>
+                &lthead&gt<br>
+                &lttitle&gtTitre de ma page&lt/title&gt<br>
+                &lthead&gt<br>
+                &ltbody&gt<br>
+                Bienvenue sur mon site<br>
+                &lt/body&gt<br>
+                &lt/html&gt<br></p><br>
+                <p>Enregistrez ensuite le fichier dans le dossier que vous voulez en cliquant sur "Fichier  Enregistrer sous". Nommez le accueil.html
+
+                    L'extension .html permet au système d'exploitation de savoir que le fichier sur lequel vous travaillez est une page web, assurez-vous donc que l'extension soit bien enregistrée.</p><br><br>
+
+            <P> Résumé:<br>
+                Pour créer une page web, il faut créer un fichier avec une extension .html</P>
+                <h3>BALISAGE DE BASE</h3>
+                <p>On remarque dans le code HTML ci-dessus qu'il existe déjà 3 balises:<BR>
+
+                    html<br>
+                    head<br>
+                    body<br>
+                   
+                   La balise &ltHTML&gtest obligatoire et permet d'indiquer qu'on code en HTML.<br>
+                   La balise &ltHEAD&gtpermet de donner des précisions au navigateur sur le contenu de la page. On y stock par exemple les meta données dont les moteurs de recherche ont besoin pour le référencement du site comme la description du site, les mots clé qu'on souhaite lui associer ou tout simplement le type d'encodage de la page ou sa langue.<br>
+                   La balise &ltBODY&gt quand à elle reçoit tout le le visuel, c'est dans cette balise qu'on construira la structure du site.</p><br>
+                </article>
+                <article>
+                    <h2>HTML  :LES BALISES</h2>
+                    <p>Le code HTML est composé de balises imbriquées les unes dans les autres ; cela permet de regrouper les informations.<br>
+                        &lt!DOCTYPE html&gt<br>
+                        &lthead&gt<br>
+                        &lttitlegtTitre de ma page&lt/title&gt<br>
+                        &ltstyle&gt ... &lt/style&gt<br>
+                        &lt/head&gt<br>
+                        &ltbody&gtBienvenue sur mon site&lt/body&gt<br>
+                        &lt/html&gt<br>
+                        Pour donner une valeur à une balise on encadre la valeur de sa balise comme ci-dessous:<br>
+                        &ltb&gtTexte GRAS&lt/b&gt<br>
+                        &lti&gtTexte ITALIQUE&lt/i&gt<br>
+                        &ltu&gtTexte SOULIGNE&lt/u&gt<br>
+                        Dans certains cas, par exemple pour &ltimg&gt, &ltbr&gt, &ltinput&gt il ne faut pas fermer la balise.<br>
+                        
+                        Exemple:<br>
+                        &ltinput type="checkbox" value="1" /&gt<br>
+                        &ltbr /&gt<br>
+                        &ltimg src="/xxx.png" target="_blank" /&gt<br>
+                        Ces balises n'ont pas pas besoin de valeur ( c'est cas de la balise &ltbr&gt ) ou alors nécessite plusieurs valeurs donc la syntaxe est différent. Le rôle des attributs est expliqué dans le chapitre suivant.<br><br>
+                        
+                        Les balises les plus utilisées sont les suivantes:</p><br>
+                        <table border="1">
+                           
+                            <tr>
+                                <th>balise</th>
+                                <th>fonction</th>
+                            </tr>
+                        
+                            <tr><th>  &lt!-- --&gt</th>	<th>  	Commentaire</th></tr>
+<tr><th>&lta&gt</th>	<th>Lien hypertext</th></tr>
+    <tr><th> &ltb&gt</th>	<th>	Texte en gras</th></tr>
+    <tr><th>  &ltbody&gt</body></th>	<th> 	Corps de la page</th></tr>
+  
+   <tr><th> &ltbr /&gt</th>	<th>Permet de sauter une ligne </th>	</tr>
+   <tr> <th>&ltcaption&gt</th><th>titre d'un tableau</th></tr>
+   <tr> <th>&ltcite&gt</th><th>citation</th></tr>
+   <tr> <th>&ltdiv&gt</th><th>division</th></tr>
+   <tr> <th>&ltem&gt</th><th>emphase</th></tr>
+   <tr> <th>&lt form&gt</th><th>formulaire</th></tr>
+   <tr> <th>&lthp&gt</th><th>titre d'importance p</th></tr>
+   <tr> <th>&lthead&gt</th><th>entete d'un fichier</th></tr>
+   <tr> <th>&lthr &gt</th><th>separateur horizontal</th></tr>
+   <tr> <th>&lthtml&gt</th><th>balise obligatoire pour declarer le de but du code html</th></tr>
+   <tr> <th>&lti&gt</th><th>italique</th></tr>
+   <tr> <th>&ltimg &gt</th><th>image</th></tr>
+   <tr> <th>&ltinput &gt</th><th>elt du formulaire</th></tr>
+   <tr> <th>&ltlabel &gt</th><th>description du champ</th></tr>
+   <tr> <th>&lt li&gt</th><th>composant d'un liste</th></tr>
+   <tr> <th>&ltstrong &gt</th><th>text en gras</th></tr>
+   <tr> <th>&ltstyle &gt</th><th>insertion du style</th></tr>
+   <tr> <th>&ltsub &gt</th><th>texte en indice</th></tr>
+   <tr> <th>&lt sup&gt</th><th>texte en exposant</th></tr>
+   <tr> <th>&lttable&gt</th><th>tableau</th></tr>
+   <tr> <th>&lttd&gt</th><th>cellule du tableau</th></tr>
+   <tr> <th>&lttr&gt</th><th>nouvelle ligne d'un tableau</th></tr>
+   <tr> <th>&ltul&gt</th><th>liste non ordonée</th></tr>
+   <tr> <th>&ltmeta&gt</th><th>information sur la page</th></tr>
+
+
+
+   
+
+
+                        </table>
+                   
+                </article>
+                <article>
+                    <h2>LES ATTRIBUTS HTML</h2>
+                    <P> Les balises peuvent avoir des propriétés, on les appelle des attributs.<br><br>
+                        &lt!DOCTYPE html&gt<br>
+                        &lthead&gt<br>
+                        &lttitle&gtTitre de ma page&lt/title&gt<br>
+                        &ltmeta name="description" content="Site web" /&gt<br>
+                        &ltstyle type="txt/css"&gt... &lt/style&gt<br>
+                        &lt/head&gt<br>
+                        &ltbody&gtBienvenue sur mon site&lt/body&gt<br>
+                        &lt/html&gt<br><br>
+                        Dans l'exemple ci-dessus, l'attribut "name" de la base "meta" a pour valeur "description". Cela permet de dire au navigateur que la balise meta - qui est une balise d'information - nous informe de la description du site. Pour cette balise la valeur se met dans l'attribut "content"</P><br>
+               <table border="1"> 
+                   <tr><th>attributs</th><th>elements</th><th>Description</th></tr>
+                   <tr><td>alt</td><td>area,img,input</td><td>Texte alternatif lorsque l'élément ne peut être affiché.</td></tr>
+                   <tr><td>autoplay</td><td>audio, video</td><td>	Chargement automatique de l'élement multimédia.</td></tr>
+                   <tr><td>charset</td><td>meta, script</td><td>Définit le type de codage de l'élement</td></tr>
+                   <tr><td>for</td><td>label,output</td><td>	Décris l'élement qui lui est associé</td></tr>
+                   <tr><td>href</td><td>a area base link</td><td>	L'url de la ressource associée</td></tr>
+                   <tr><td>id</td><td>tous</td><td>	Permet d'associer un identifiant à un élément</td></tr>
+                   <tr><td>type</td><td>	button input embed object script style </td><td>Indique le type de l'élément</td></tr>
+               </table>
+                    </article>
+                    <article>
+                        <h2>HTML :LES TABLEAUX</h2>
+                        <p>Aujourd'hui les tableaux HTML ne sont utilisés que pour des tableaux de données. Il est plutôt conseillé de faire la mise en page en CSS. Plus souple, plus précis, plus facile et surtout plus évolutif, misez tout ce qui est visuel sur le CSS. Un tableau HTML ne doit servir que de base d'un tableau </p>
+                    <h3>CREER UN TABLEAU AVEC LA BALISE &lttable&gt</h3>
+                        <p>EXEMPLE:<br>
+                             &lttable><br>
+                            &ltcaption>titre du tableau&lt/caption><br>
+                            &ltcaption align="bottom">Legende en bas&ltcaption>
+                            &lttr>
+                                &lttd colspan="2">
+                                FUSION de celulle
+                                &lt/td>
+                                &lt/tr>
+                            &lttr><br>
+                            &ltth width="10">Entete 1&ltth><br>
+                            &ltth >Entete 2&lt/th><br>
+                            &lt/tr&gt<br>
+                            &lttr&gt<br>
+                            &lttd >height ="200">Cellule 1 de la ligne 2&lt/td><br>
+                            &lttd>Cellule 2 de la ligne 2&lt/td><br>
+                            &lt/tr><br>
+                            &lt/table><br>
+                        <br></p>
+                        <p>
+                            Si on voulait faire les choses proprement un tableau devrait se contruire comme ceci:<br>
+
+&lttable><br>
+&ltthead><br>
+&lttr><br>
+&ltth>Col1&lt/th><br>
+&ltth>Col2&ltth><br>
+&lt/tr><br>
+&lt/thead><br>
+&lttbody><br>
+&lttr><br>
+&lttd>c1&lt/td><br>
+&lttd>c2&lttd><br>
+&lt/tr><br>
+&lt/tbody><br>
+&lttfoot><br>
+&lttr><br>
+&ltth>c3&lt/th><br>
+&ltth>c4&lt/th><br>
+&lt/tr><br>
+&lt/tfoot><br>
+&lt/table><br>
+                        </p>
+                    </article>
+                    <article>
+                        <h2>LES FORMULAIRES HTML</h2>
+                        <P>
+                            L'utilité d'un formulaire HTML<BR><br>
+Le formulaire HTML est un ensemble d'éléments que l'utilisateur soumet au serveur. Ces éléments sont essentiellement les inputs (voir le chapitre précédent). Cela permet une communication entre l'utilisateur et le site web.
+La balise &ltform><br>
+Les formulaires sont encadrés par les balises &ltform> et possèdent les attributs suivants:<br>
+
+ METHOD, indique le type d'envoi des données. Soit en POST ( données envoyées via le corps de la requête ) ou en GET qui envoie les données via l'URL.<br>
+ ACTION indique la localisation du script. Cela peut être un script CGI ou directement une adresse mail, exemple : mailto:exemple@exemple.com<br>
+
+Exemple:<br><br>
+&ltform method="POST" action="/page-html-formulaire"><br>
+Nom &ltinput type="text" name="nom"  /><br>
+Prénom &ltinput type="text" name="prenom" /><br>
+&ltinput type="submit" value="Valider" /><br>
+&lt/form><br><br>
+Vous pouvez styliser le formulaire HTML:<br><br>
+&ltorm method="POST" action="/page-html-formulaire"><br>
+&ltfieldset><br>
+&ltlegend>Inscription&lt/legend><br>
+&ltinput type="text" name="nom" placeholder="Nom"  /><br>
+&ltbr /><br>
+&ltinput type="text" name="prenom" placeholder="Prenom"  /><br>
+&ltbr /><br>
+&ltinput type="submit" class="btn btn-primary" value="Valider" /><br>
+&lt/fieldset><br>
+&lt/form><br>
+                        </P>
+                    </article>
+                    <article>
+                        <h2>LES IMAGES HTML</h2>
+                        <P>
+                            Pour afficher un texte au survol de l'image, il suffit d'indiquer le texte souhaiter dans l'attribut title. Il est également intéressant de remplir l'attribut alt qui permet d'afficher un texte si le navigateur n'arrive pas à charger l'image.<br><br>
+&ltimg 
+alt="Photo egypte ancienne"
+title="Photo Egypte Ancienne"  
+src="http://www.egypte-antique.com/egypte.jpg" />
+                        </P>
+                    </article>
+                    <article>
+                        <h2>UN TUTORIEL YOUTUBE POUR PLUS VOUS AIDEZ A PRATIQUER </h2><BR><BR>
+                        <video src="https://youtu.be/h_mzafM2yJs"controls poster="C:\Users\fatma\OneDrive\Bureau\projet web\image pour le projet\html.png"  width="400" height="400" id="videoooo">⁪</video⁪>
+                    </article>
+                
+        </section>
+        <footer>
+            <div class="container">
+                <div id="foot">
+                    <div class="1">
+                        <h3>liens</h3>
+                        <ul>
+                            <li><a href="#">apprendre html</a></li>
+                            <li><a href="#">apprendre css</a></li>
+                            <li><a href="#">apprendre javascript</a></li>
+                            </ul>
+                    </div>
+                    <div class="2">
+                        <h3>Partenaires</h3>
+                        <ul>
+                            <li><a href="#">devenir partenaire</a></li>
+                            <li><a href="#">apprendre a coder en python</a></li>
+                         
+                        </ul>
+                    </div>
+                   
+                    <div class="3">  
+                      <h3>Contact</h3>
+                      <ul>
+                          <li><a href="#">facebook</a></li>
+                          <li><a href="#">twitter</a></li>
+                          <li><a href="#">instagram</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  
+    </body>
+</html>

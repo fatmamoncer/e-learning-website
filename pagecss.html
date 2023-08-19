@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> css c'est quoi</title>
+        <style>
+               *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            p{
+     font-family: 'Times New Roman', Times, serif;
+     font-style: italic;
+  
+   }
+            nav{
+        background-color:rgba(245, 245, 220, 0.307);
+       
+        display: flex;
+        justify-content:space-around;
+        padding:1.5rem 0.5em;
+  position: sticky;
+  top: 0;
+    }
+    nav li{
+        display: inline-block;
+        padding:8px;
+        margin-right: 100px;
+        position: sticky;
+  
+ 
+    }
+    #navelts li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:darkblue;
+   text-align: center;
+   font-size:small;
+   font-family:'Times New Roman', Times, serif;
+   font-style:italic;
+   font-weight: bold;
+
+}
+#navelts li>a:hover{
+   font-weight:900 ;
+   font-size: larger;
+}
+            .bar{
+                color:blue;
+            } 
+            #main{
+             display: flex;
+             flex-direction: column;
+            }
+            section{
+              
+                background-color:white;
+          margin: 0; 
+            }
+            header{
+               padding: 5%;
+                background-color:rgba(128, 128, 128, 0.327);
+          margin: 0;
+              
+            }
+          
+           footer{
+              padding: 5%;
+                background-color:rgba(128, 128, 128, 0.327);
+              
+            }    
+             *{
+    box-sizing:border-box;
+  }
+ 
+ h1{
+     color: darkblue;
+     font-size:xx-large;
+     display:flex;
+     justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+ }
+  #foot{
+      display: flex;
+      justify-content: space-around;
+      color:darkblue;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  ul li {
+     list-style: none;
+ 
+   }
+   li >a {
+    color:darkblue;
+     text-decoration: none;
+   }
+   #sec{
+       display:inline-block;
+      }
+    #sec article{
+   padding:100px;
+   border-radius:5px;
+   margin: 15px;
+   text-align:left;
+   border: 1px solid ;
+   box-shadow: 2px 2px 2px 2px darkblue;
+   background-color:rgba(245, 245, 220, 0.307) ;
+
+
+   }
+   h3{
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+    }
+   h2{
+       color: darkblue;
+       font-style: italic;
+       font-family: 'Times New Roman', Times, serif;
+   }
+   #parag{
+      display: flex;
+      justify-content: center;
+      color: darkblue;
+      font-family:'Times New Roman', Times, serif;
+      font-size: larger;
+  }
+  @media screen and (max-width : 800px){
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width : 760px){
+    .cards{
+        width:80%;
+        margin: 0 auto;
+    }
+    .cards{
+        flex-direction: column;
+    }
+}
+   @media screen and (max-width: 575px) {
+  .cards {
+    width: 90%;
+  }
+  section {
+    width: 100vw;
+  }
+  h1 {
+    margin: 0;
+    padding: 0em 0em;
+  }
+  header {
+    padding: 1rem;
+  }
+  
+  #foot {
+      flex-direction: column;
+      gap: 1.2rem;
+      margin: .5rem 2rem;
+  }
+  
+  nav li {
+    display: block;
+  }
+}
+
+        </style>
+
+    </head>
+    <body>
+        <nav> <ul>
+            <div id="navelts">
+              
+            <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page d'acceuil.html">acceuil</a></li>
+        
+           
+             <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagehtml.html">html</a></li>
+            
+             <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagecss.html" >css</a></li>
+            
+              <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page javascript.html" >javascript</a></li>
+             
+              <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\pageformulaire.html" >contacter  nous</a></li>
+            </div>
+              </ul></nav><div id="main">
+        <header>
+<h1>CSS C'EST QUOI ?</h1>
+<p id="parag"> 
+    CSSCSS est l'acronyme de « Cascading Style Sheets » qu'on pourrait traduire par "feuilles de style en cascade".
+    
+    Pour faire rapide CSS permet de gérer tout le style, le visuel d'une page web. Bordure, couleur, placement d'un élément, opacité, police d'écriture, marges, style de police, etc.
+    
+    Il agit sur des éléments HTML.
+    
+    On peut soit intégrer le CSS directement sur l'élément HTML soit dans un fichier à part. Il est bien sur conseillé de séparer les informations, un site web bien construit doit avoir une page de structure de code ( HTML ) et un fichier CSS à part.</p>
+        </header>
+        <section id="sec">
+            <article>
+               <h2> L'attribut style</h2>
+               <p>Exemple de CSS dans un élément HTML :<br><BR>
+                &ltdiv style="color:white;background-color:green;">Bonjour&lt/div>&ltp> <br>
+            
+               </p>
+            </article>
+<article>
+  <h2>  La balise style</h2>
+  <p> Je peux séparer le CSS comme ceci:<br>
+    &ltstyle><br>
+    #element<br>
+    {  <br>
+    color:white;<br>
+    background-color:green; <br>
+    }<br>
+    &lt/style><br>
+    &ltdiv id="element">Bonjour&lt/div><br>
+    Résultat:<br>
+</p> 
+</article>
+<article>
+   <h2> Le fichier css</h2>
+   <p> Je peux appeler mon css d'une ressource extérieure. Dans mon exemple je veux appeler le CSS qui se trouve dans le dossier folder et se nomme file.css<br>
+    &ltlink rel="stylesheet" href="/folder/file.css"><br><BR>
+     A RETENIR:<br>
+     Le CSS peut être injecté directement dans la balise à travers l'attribut style<br>
+     Le CSS peut être séparé du code HTML en l'encadrant de balises style<br>
+     Le CSS peut être appelé depuis une autre page<br></p>
+</article>
+<article>
+   <h2> Pourquoi utiliser CSS ?</h2>
+<p>Aujourd'hui CSS est un incontournable du web. Bien qu'il soit possible de changer le visuel de beaucoup d'éléments HTML en HTML, l'utilisation de CSS rend la création de page web beaucoup plus simple, plus rapide et permet surtout une meilleure évolutivité. Si vous avez un site web de 1000 pages statiques et différentes et que votre titre pricinpal encadré par la balise &lth1> est de couleur rouge mais que par la suite vous voulez du bleu, en CSS il suffira de changer une ligne de code, en HTML vous devriez le changer 1000 fois.</p>
+</article>
+<article>
+    <h2> L'association par balise</h2>
+    <p>
+        Je peux donner un style à toutes les balises HTML. La syntaxe est la suivante:<br>
+        &ltstyle><br>
+        span<br>
+        {<br>
+        color:red;<br>
+        }<br>
+        &ltstyle><br>
+        Désormais toutes les balises &ltspan> de la page auront un texte rouge.<br>
+        &ltspan>Yes!&lt/span></p>
+</article>
+<article>
+    <h2>   L'association par id</h2>
+    <p>
+     
+        Pour donner un identifiant unique à un élément, je lui donne comme attribut un "id".<br>
+        &ltdiv id="xxx">BONJOUR&ltdiv><br>
+        Je peux maintenant contrôler l'élément "à distance". Exemple:<br>
+        &ltstyle><br>
+        #xxx<br>
+        {<br>
+        color:red;<br>
+        background-color:blue;<br>
+        font-weight:bold;<br>
+        width:100px;<br>
+        }<br>
+        &lt/style><br>
+        On remarque que pour une association unique, CSS utilise le caractère #. La syntaxe CSS est différente de HTML, les données associées à l'identifiant sont encadrées par des accolades {}.
+
+        Dans ces accolades on peut y implémenter des propriétés. Dans cet exemple on peut voir "color", "background-color", "font-weight" et "width". Et pour chaque propriété j'ai donné une valeur. Ainsi pour la propriété "color", j'ai défini que la couleur est "red" donc rouge. La propriété "color" change la couleur du texte</p>
+</article>
+<article>
+    <h2>Les associations par class</h2>
+    <p>
+        La logique des class est la même que l'id, la différence étant que l'id est unique, ce qui n'est pas le cas de la class.<br>
+        
+        Exemple:<br>
+        &ltspan class="menu">XXX&lt/span><br>
+        &ltdiv class="menu">YYY&lt/div><br>
+        &ltstyle><br>
+        .menu<br>
+        {<br>
+        background-color:violet;<br>
+        }<br>
+        &lt/style></p>
+</article>
+<article>
+    <h2>Combinaison d'association</h2>
+    <p>
+        Il est possible de combiner les associations entre elles. Ainsi si je veux transformer le texte des balises &lta> du &ltfooter> en leur donnant une couleur bleu, je peux le faire en une ligne comme ceci:<br>
+        <h3>Eléments imbriqués</h3><br>
+        &ltstyle><br>
+        footer a<br>
+        { <br>
+        color:blue; <br>
+        }<br>
+        &lt/style><br>
+        On remarque un espace entre la balise footer et a. Les liens de votre &ltfooter> seront désormais bleu.<br>
+        Groupe d'éléments<br>
+        &ltstyle><br>
+        a,b,span,footer<br>
+        { <br>
+        font-weight:bold; <br>
+        }<br>
+        &lt/style><br>
+        
+        Les balises &lta>, &ltb>,&ltspan> et &ltfooter> auront désormais le texte en gras.<br>
+       <h3>Sélecteur père-fils direct de premier dégré</h3> <br>
+        &ltstyle><br>
+        body > a<br>
+        { <br>
+        font-weight:bold; <br>
+        }<br>
+        &lt/style><br>
+        Ce code permet de donner un texte gras aux liens qui sont directement dans le &ltbody> ; les liens imbriqués dans d'autres éléments ne seront pas concernés.<br>
+       <h3> Sélecteur consécutif</h3><br>
+        &ltstyle><br>
+        td + td<br>
+        { <br>
+        background-color:orange;<br>
+        }<br>
+        &lt/style><br>
+       <h3>Selecteur avec attribut</h3> 
+        On peut chercher les éléments qui ont un attribut renseigné :
+        &ltstyle>
+        input[disabled]
+        { 
+        color:orange;
+        }
+        &lt/style>
+        &ltinput disabled type="text" value="0" />
+        &ltinput type="text" value="1" />
+        Résultat:
+        0
+         
+        1
+        Dans cet exemple on peut voir que l'input qui a été mis en "disabled" a pris la couleur orange.
+        <h3>Selecteur avec valeur d'attribut</h3>
+        On peut chercher les éléments qui ont une valeur d'attribut renseignée :<br>
+        &ltstyle><br>
+        input[value="123"]<br>
+        { <br>
+        background-color:orange;<br>
+        }<br>
+        &lt/style><br>
+        &ltinput type="text" value="123" /><br>
+        &ltinput type="text" value="456" /><br>
+        &ltinput type="text" value="789" /><br>
+       
+       <h3>Sélecteur avec une recherche avancée</h3> 
+        On peut faire un sélection d'éléments via la recherche "éléments dont la valeur de tel attribut contient telle valeur".<br>
+        
+        Exemple:<br>
+        &ltstyle><br>
+        input[value~="olivier"]<br>
+        {<br>
+        color:green;<br>
+        font-style:italic;<br>
+        border-color:red;<br>
+        }<br>
+        &lt/style><br>
+        &ltinput type="text" value="olivier engel" /><br>
+        &ltinput type="text" value="engel olivier" /><br>
+        &ltinput type="text" value="olivierengel" /><br>
+        &ltinput type="text" value="batman" /><br>
+        olivier engel<br>
+        
+    
+      <h3> Eléments dont l'attribut commence par "XXX"</h3> <br>
+        
+                
+        &ltstyle><br>
+        input[value^="olivier"]<br>
+        {<br>
+        color:green;<br>
+        }<br>
+        &lt/style><br>
+     
+       <h3>Eléments dont l'attribut fini par "XXX"</h3> <br>
+        &ltstyle><br>
+        input[value$="olivier"]<br>
+        {<br>
+        color:green;<br>
+        }<br>
+        &lt/style><br>
+       
+        <h3>Elément qui contient la sous chaine "XXX"</h3><br>
+        &ltstyle><br>
+        input[value*="olivier"]<br>
+        {<br>
+        color:green;<br>
+        }
+        &lt/style></p>
+</article>
+<article>
+    <h2>Les couleurs en css</h2>
+    <p>Il existe trois façon de générer une couleur en CSS.<br>
+        background-color:red;<br>
+        background-color:#ff0000;<br>
+        background-color:RGB( 255, 0, 0 );<br>
+        Comme l'exemple l'indique, on peut choisir un nom de couleur en anglais. Exemple: red, green, blue, etc. On peut également donner à la propriété un code hexadécimale qui est composé de 3 valeurs:<br>
+        
+        Rouge - Vert - Bleu.<br>
+        
+        En hexadécimal, FF représente la valeur la plus haute et 00 la plus faible. Ecrire FF 00 00 signifie que la valeur souhaité est au rouge maximum et au minimum pour vert et bleu. On obtient donc un rouge pur.<br>
+        
+        On retrouve la même logique pour le code décimal RGB, où le maximum est 255.<br></p>
+</article>
+<article>
+    <h2>La police</h2>
+
+<p>Insérer le code ci-dessous dans votre balise &lthead><br>
+    &ltlink href="http://fonts.googleapis.com/css?family=Fenix" rel="stylesheet" type="text/css"><br>	
+    puis intégrez le code suivant dans votre CSS.<br>
+    &ltstyle><br>
+    body<br>
+    {<br>
+    font-family: "Fenix", serif;<br>
+    }<br>
+        &lt/style><br>
+    Et voila, sans autre intervention, votre police d'écriture a changé comme par magie<br></p></article>
+    <article>
+        <h2>Les marges</h2>
+        <p>
+            Il est essentiel de comprendre comment fonctionne les marges d'un élément CSS. Le margin représente les marges extérieures et le padding les marges intérieure.<br>
+            margin<br>
+            border<br>
+            padding<br>
+           
+             
+             
+             
+            
+            </p>
+    </article>
+    <article>
+        <h2>Les positions en css</h2>
+        <p>
+         
+            <h3> Les margesFlottant </h3>
+            En CSS les éléments qui ont la propriété display:inline; sont affichés les uns à la suite des autres alors que les éléments ayant la propriété display:block; amène un retour à la line après leur affichage. Par défaut les éléments &lta>, &ltb>, &lti>, &ltspan>, etc. sont des éléments inline contrairement à &ltdiv> ou &ltp>, &ltform> etc.<br>
+           <h3> Relative Block</h3>br>
+            Les éléments de type Block occupe tout l'espace de la ligne et impose un retour à la ligne pour l'élément qui suit.<br>
+            &ltstyle><br>
+            .div1<br>
+            {<br>
+            background-color:yellow;<br>
+            }<br>
+            .div2<br>
+            {<br>
+            background-color:gray;<br>
+            }<br>
+            &ltstyle><br>
+            &ltdiv class="div1">DIV 1&lt/div><br>
+            &ltdiv class="div2">DIV 2&lt/div><br>
+            Résultat:<br>
+            DIV 1<br>
+            DIV 2<br>
+           <h3> Relative Inline</h3><br>
+            Les éléments de type Inline quand à eux se suivent les uns les autres. L'élément span est d'ailleurs complètement invisible par défaut.<br>
+            &ltstyle><br>
+            .span1<br>
+            {<br>
+            background-color:yellow;<br>
+            }<br>
+            .span2<br>
+            {<br>
+            background-color:gray;<br>
+            }<br>
+            &lt/style><br>
+            &ltdiv class="span1">SPAN 1&lt/div><br>
+            &ltdiv class="span2">SPAN 2&lt/div><br>
+            Résultat:<br>
+            SPAN 1 SPAN 2<br>
+           <h3> Absolute</h3><br>
+            Un élément qui a la propriété position:absolute; sera placé dans son conteneur ( qui a une position:relative; ) aux coordonnées qu'on lui définit.<br>
+            
+            Exemple:<br>
+            &ltstyle><br>
+            #container<br>
+            {<br>
+            position:relative;<br>
+            border:1px dashed #ccc;<br>
+            }<br>
+            #absolute_div<br>
+            {<br>
+            position:absolute;<br>
+            background-color:yellow;<br>
+            top:60px;<br>
+            left:30px;<br>
+            height:30px;<br>
+            width:100px;<br>
+            }
+            &ltstyle><br>
+             
+            &ltdiv class="container"><br>
+            &ltdiv class="absolute_div">&lt/div><br>
+            &ltdiv><br>
+            Résultat:<br>
+            absolute<br>
+           <h3>Fixed</h3><br>
+            Un élément qui a la propriété position:fixed; sera toujours visible sur l'écran à condition que les coordonnées qu'on lui donne soit sur l'écran. Le menu en haut de page de ce site a cette propriété. Lorsque l'on scroll celui-ci reste au top de la fenêtre<br></p>
+    </article>
+    <article>
+        <h2>Le responsive design</h2>
+        <p>Le responsive design
+        
+           
+            En CSS le resposive design est le fait de créer un design adapté au support. Il ne s'agit pas seulement d'esthétisme mais aussi offrir une meilleur expérience utilisateur à l'internaute en augmentant l'ergonomie de votre site web.<br>
+            
+            La methode la plus basique de responsive design est d'afficher ou de cacher un élément en fonction de la largeur et de la hauteur du support. Il est donc possible de créer deux menus et afficher le petit menu sur les écrans de faible résolution. Le problème de cette pratique c'est qu'on créer deux fois la même ressource. Il est donc plus judicieux de changer les propriétés d'un élément en fonction de la taille de l'écran.<br>
+            
+            Exemple:<br>
+            &ltstyle><br>
+            #menu{  width:350px; }<br>
+            @media (min-width: 500px) { <br>
+            #menu{  width:450px; } <br>
+            }<br>
+            @media (min-width: 1000px) { <br>
+            #menu{  width:800px; } <br>
+            }<br>
+             
+            &lt/style>
+            Dans cet exemple, notre élément #menu aura par défaut une taille de 350 pixels. Si le support est supérieur à 500 pixels en largeur alors cet élément passera à 500px de largeur et si le support est supérieur à 1000 pixels de largeur le menu fera 800 pixels de largeur. Il est possible de tester son responsive design en changeant la taille de son navigateur mais un support tablette ou smartphone peut parfois être plus parlant.<br></p>
+    </article>
+    <article>
+        <p><h2>Quelques propriétés CSS</h2>
+         
+            background:#ddd url(/image/bg.png) ->Arrière plan<br>
+           
+           
+            background-attachment:fixed-> Mode de défilement de l'image de l'arrière plan<br>
+           
+           
+            background-color:red-> Couleur d'arrière plan de l'élément<br>
+           
+            background-image:url(image/bg.png)->   URl de l'image de l'arrière plan<br>
+         
+          
+            background-position-x:60%->     Définit la position de l'image de fond horizontalement<br>
+       
+      
+            background-position-y:15px;->  Définit la position de l'image de fond verticalement<br>
+          
+         
+            background-position:60% 15px -> Définit la position de l'image de fond verticalement<br>
+           
+            
+            border-bottom<br>
+            border-left<br>
+            border-right<br>
+          
+            border:1px solid black->        Affichage de la bordure: épaisseur, type de bordure et couleur<br>
+  
+            color:blue-> Détermine la couleur du texte<br>
+      </p>
+    </article>
+        </section>
+        <footer>
+            <div class="container">
+                <div id="foot">
+                    <div class="1">
+                        <h3>liens</h3>
+                        <ul>
+                            <li><a href="#">apprendre html</a></li>
+                            <li><a href="#">apprendre css</a></li>
+                            <li><a href="#">apprendre javascript</a></li>
+                            </ul>
+                    </div>
+                    <div class="2">
+                        <h3>Partenaires</h3>
+                        <ul>
+                            <li><a href="#">devenir partenaire</a></li>
+                            <li><a href="#">apprendre a coder en python</a></li>
+                         
+                        </ul>
+                    </div>
+                   
+                    <div class="3">  
+                      <h3>Contact</h3>
+                      <ul>
+                          <li><a href="#">facebook</a></li>
+                          <li><a href="#">twitter</a></li>
+                          <li><a href="#">instagram</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>

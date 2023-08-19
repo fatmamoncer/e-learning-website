@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> css c'est quoi</title>
+        <style>
+               *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            nav{
+        background-color:rgba(245, 245, 220, 0.307);
+       
+        display: flex;
+        justify-content:space-around;
+        padding:1.5rem 0.5em;
+  position: sticky;
+  top: 0;
+    }
+    nav li{
+        display: inline-block;
+        padding:8px;
+        margin-right: 100px;
+        position: sticky;
+  
+ 
+    }
+    #navelts li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:darkblue;
+   text-align: center;
+   font-size:small;
+   font-family:'Times New Roman', Times, serif;
+   font-style:italic;
+   font-weight: bold;
+
+}
+#navelts li>a:hover{
+   font-weight:900 ;
+   font-size: larger;
+}
+            .bar{
+                color:blue;
+            } 
+            #main{
+             display: flex;
+             flex-direction: column;
+            }
+            section{
+              
+                background-color:white;
+          margin: 0; 
+            }
+            header{
+               padding: 5%;
+                background-color:rgba(128, 128, 128, 0.327);
+          margin: 0;
+              
+            }
+          
+           footer{
+              padding: 5%;
+                background-color:rgba(128, 128, 128, 0.327);
+              
+            }    
+             *{
+    box-sizing:border-box;
+  }
+ .parag{
+     color:darkblue;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ h1{
+     color: darkblue;
+     font-size:xx-large;
+     display:flex;
+     justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+ }
+  #foot{
+      display: flex;
+      justify-content: space-around;
+      color:darkblue;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  ul li {
+     list-style: none;
+ 
+   }
+   li >a {
+    color:darkblue;
+     text-decoration: none;
+   }
+   #sec{
+       display:inline-block;
+      }
+    #sec article{
+   padding:100px;
+   border-radius:5px;
+   margin: 15px;
+   text-align:left;
+   border: 1px solid ;
+   box-shadow: 2px 2px 2px 2px darkblue;
+   background-color:rgba(245, 245, 220, 0.307) ;
+
+
+   }
+   h2{
+       color: darkblue;
+       font-style: italic;
+       font-family: 'Times New Roman', Times, serif;
+   }
+   p{
+     font-family: 'Times New Roman', Times, serif;
+     font-style: italic;
+  
+   }
+ 
+   #parag{
+      display: flex;
+      justify-content: center;
+      color: darkblue;
+      font-family:'Times New Roman', Times, serif;
+      font-size: larger;
+  }   @media screen and (max-width : 800px){
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width : 760px){
+    .cards{
+        width:80%;
+        margin: 0 auto;
+    }
+    .cards{
+        flex-direction: column;
+    }
+}
+   @media screen and (max-width: 575px) {
+  .cards {
+    width: 90%;
+  }
+  section {
+    width: 100vw;
+  }
+  h1 {
+    margin: 0;
+    padding: 0em 0em;
+  }
+  header {
+    padding: 1rem;
+  }
+  
+  #foot {
+      flex-direction: column;
+      gap: 1.2rem;
+      margin: .5rem 2rem;
+  }
+  
+  nav li {
+    display: block;
+  }
+}
+
+        </style>
+
+    </head>
+    <body>
+        <nav> <ul>
+            <div id="navelts">
+              
+            <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page d'acceuil.html">acceuil</a></li>
+        
+           
+             <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagehtml.html">html</a></li>
+            
+             <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagecss.html" >css</a></li>
+            
+              <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page javascript.html" >javascript</a></li>
+             
+              <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\pageformulaire.html" >contacter  nous</a></li>
+            </div>
+              </ul></nav><div id="main">
+        <header>
+<h1>Le javascript c'est quoi ?</h1>
+<p id ="parag">
+    JavaScript est un langage de programmation qui permet d'implémenter des mécanismes complexes sur une page web. À chaque fois qu'une page web fait plus que simplement afficher du contenu statique — afficher du contenu mis à jour à des temps déterminés, des cartes interactives, des animations 2D/3D, des menus vidéo défilants, ou autre, JavaScript a de bonnes chances d'être impliqué. C'est la troisième couche des technologies standards du web, les deux premières (HTML et CSS) étant couvertes bien plus en détail dans d'autres tutoriels sur MDN.</p>
+        </header>
+        <section id="sec">
+  <article>
+      <h2>La balise &ltscript></h2>
+      <p>
+        La balise &ltscript> permet d'insérer du javascript qui s'execute coté client. Pour intégrer du code javascript à vos page web, vous pouvez soit le mettre dans un fichier externe avec une extension .js soit l'écrire directement dans la page web.<br>
+        <br>
+       <strong> script externe:</strong><br>
+         &ltscript src="/script.js" type="text/javascript" >&lt/script><br><br>
+         <strong> Exemple script interne:</strong><br>
+        &ltscript type="text/javascript"> 
+  <p>//<![CDATA[ 
+    // code javascript
+    //]]>
+    //</p>
+        &lt/script> <br><br>
+         
+       <strong>Exemple code inline dans une balise HTML:</strong> <br>
+        &lta href="#" onclick="code javascript">&lt/a></p>
+  </article>
+  <article>
+      <h2>Les commentaires</h2>
+      <p>
+        Pour écrire un commentaire dans votre code, c'est à dire du texte qui ne sera pas interprété mais juste lisible pour le programmeur:
+       <br>
+       &ltscript type="text/javascript"> <br>
+        /* Ceci est un commentaire */<br>
+        &lt/script><br></p>
+  </article>
+  <article>
+      <h2>Déclarer une variable</h2>
+      <p>
+        La syntaxe pour déclarer une variable en javascript est la suivante<br>
+        &ltscript type="text/javascript"> <br>
+        var nom = 'olivier';<br>
+        &lt/script> <br></p>
+  </article>
+  <article>
+      <h2>Les alertes</h2>
+      <p>
+        Vous pouvez utiliser des commandes qui controleront votre navigateur.<br>
+        Le plus connu est l'alerte navigateur :<br>
+        &ltscript type="text/javascript"> <br>
+        alert("Bonjour");<br>
+        &ltscript><br>
+        Vous pouvez lui transmettre une variable:<br>
+        &ltscript type="text/javascript"> <br>
+        var nom = "olivier";<br>
+        alert( nom );<br>
+        &lt/script> </p>
+  </article>
+  <article>
+      <h2>Les prompt</h2>
+      <p>
+        Vous pouvez récupérer une entrée utilisateur à l'aide de la commande prompt:<br>
+        &ltscript type="text/javascript"><br>
+        var nom = window.prompt( "Quel est votre nom?" );<br>
+        alert( nom );<br>
+        &lt/script></p>
+    </article>
+    <article>
+        <h2>Les consoles des navigateurs</h2>
+        <p>
+          Sur la plupart des navigateurs vous pouvez afficher la console via la touche F12 de votre clavier.<br>
+          
+          Exemple sur chrome:<br>
+           
+          &ltscript type="text/javascript"><br>
+          console.log( "variable: ", "val 1" );<br>
+          console.log( "tableau: ", new Array("val 1", "val 2") );<br>
+          console.log( "objet:", { nom : "engel", "prenom" : "olivier" } );<br>
+          function test(){ alert( "ok" ); }<br>
+          console.log( "fonction:", test );<br>
+          &lt/script></p>
+    </article>
+    <article>
+        <h2>Les operateurs</h2>
+        <p>
+            <strong>Les opérateurs de calcul en javascript:</strong><br>
+            &ltscript type="text/javascript"> <br>
+            var r = 1 + 1; /* 2 */<br>
+            var r = 1 * 1; /* 1 */<br>
+            var r = 1 - 1; /* 0 */<br>
+            var r = 1 / 1; /* 1 */<br>
+            &ltscript><br>
+           <strong>Les opérateurs d'affection:</strong> <br>
+            &ltscript type="text/javascript"> <br>
+            var r = 2; <br>
+            var r+= 1; /* 2+1 = 3 */ <br>
+            var r-= 1; /* 2-1 = 1 */ <br>
+            var r*= 1; /* 2*1 = 2 */ <br>
+            var r/= 1; /* 2/1 = 2 */ <br>
+            &lt/script> <br>
+           <strong> Les opérateurs d'incémentation:</strong><br>
+            &ltscript type="text/javascript"> <br>
+            var r = 100;<br>
+            r++; /* 101 */<br>
+            r--: /* 100 */<br>
+            &lt/script> <br>
+           <strong>Les opérateurs de comparaison:</strong> <br>
+            &ltscript type="text/javascript"> <br>
+            var x = 500;<br>
+            x == 500; /* egal a = retourne TRUE */<br>
+            x != 501; /* different de = retourne TRUE */<br>
+            x > 501; /* supperieur a = retourne FALSE */<br>
+            x  501; /* inferieur a = retourne TRUE */<br>
+            x >= 501; /* superieur ou egal a = retourne FALSE */<br>
+            x = 501; /* inferieur ou egal a = retourne TRUE */<br>
+            &ltscript> <br>
+            <strong>Les opérateurs logiques: L'opérateur "OU":</strong><br>
+            &ltscript type="text/javascript"> <br>
+            var x = TRUE;<br>
+            var y = FALSE;<br>
+            ( x || z ) /* TRUE */<br>
+            &lt/script> <br>
+            Le code ci-dessus vérifie si l'une des deux valeurs remplit la condition TRUE. L'opérateur "ET":<br>
+             
+            &ltscript type="text/javascript"> <br>
+            var x = TRUE;<br>
+            var y = FALSE;<br>
+            ( x && z ) /* FALSE */<br>
+            &ltscript></p>
+    </article>
+  
+  <article>
+<h2>Les tableaux</h2>
+<p>
+    &ltscript type="text/javascript"> <br>
+    var a = new Array();<br>
+    a[0] = "Valeur 1";<br>
+    a[1] = "Valeur 2";<br>
+    /* Autre syntaxe */<br>
+    var b = [];<br>
+    b[0] = 1;<br>
+    /* Autre syntaxe */<br>
+    var b = [];<br>
+    b.push( 1 );<br>
+    &ltscript><br><br>
+    Pour parcourir un tableau en javascript vous pouvez utiliser la commande FOR:<br>
+    &ltscript type="text/javascript"> <br>
+    var a = new Array();<br>
+    a[0] = "Valeur 1";<br>
+    a[1] = "Valeur 2";<br>
+    for( i in a ){<br>
+    alert( a [i] );<br>
+    }<br>
+    &lt/script></p>
+  </article>
+  <article>
+      <h2>Les objets</h2>
+      <p>
+        Les attributs :<br>
+        &ltscript type="text/javascript"> <br>
+        function Voiture(){<br>
+        this.roues = 4;<br>
+        }<br>
+        var ma_voiture = new Voiture();<br>
+        alert( ma_voiture.roues ); /* Retournera 4 */<br>
+        var ma_voiture = new Voiture();<br>
+        ma_voiture.roues = 6;<br>
+        alert( ma_voiture.roues ); /* Retournera 6 */<br>
+        &lt/script> <br>
+        Les méthodes :<br>
+         
+        &ltscript type="text/javascript"> <br>
+        function Voiture(){<br>
+        this.roues = 4;<br>
+        this.getRoues = function(){<br>
+        alert( this.roues );<br>
+        }<br>
+        }<br>
+        var ma_voiture = new Voiture();<br>
+        ma_voiture.getRoues(); /* Rtournera 5 */<br>
+        &lt/script></p>
+  </article>
+        </section>
+        <footer>
+            <div class="container">
+                <div id="foot">
+                    <div class="1">
+                        <h3>liens</h3>
+                        <ul>
+                            <li><a href="#">apprendre html</a></li>
+                            <li><a href="#">apprendre css</a></li>
+                            <li><a href="#">apprendre javascript</a></li>
+                            </ul>
+                    </div>
+                    <div class="2">
+                        <h3>Partenaires</h3>
+                        <ul>
+                            <li><a href="#">devenir partenaire</a></li>
+                            <li><a href="#">apprendre a coder en python</a></li>
+                         
+                        </ul>
+                    </div>
+                   
+                    <div class="3">  
+                      <h3>Contact</h3>
+                      <ul>
+                          <li><a href="#">facebook</a></li>
+                          <li><a href="#">twitter</a></li>
+                          <li><a href="#">instagram</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>

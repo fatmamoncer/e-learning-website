@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>What is web development</title>
+  <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+  <link rel="shortcut icon" href="C:\Users\fatma\OneDrive\Bureau\projet web\image pour le projet\icon.jpg" />
+  <style type="text/css">
+    p {
+      font-family: 'Times New Roman', Times, serif;
+      color: darkblue;
+      justify-content: center;
+    }
+
+    h2 {
+      color: darkblue;
+      margin-left: 120px;
+    }
+
+
+    h1 {
+      font-family: 'Times New Roman', Times, serif;
+      color: darkblue;
+      margin-left: 0.5em;
+      margin-top: 1em;
+
+    }
+
+    section {
+
+      display: flex;
+
+      background-color: rgba(245, 245, 220, 0.307);
+      padding: 1em;
+
+
+
+    }
+
+    h3 {
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+
+
+    footer {
+      background-color: rgba(128, 128, 128, 0.327);
+
+
+      height: fit-content;
+      padding: 1em;
+    }
+
+
+    header {
+      background-color: rgba(128, 128, 128, 0.327);
+      color: darkblue;
+      padding: 5em;
+
+    }
+
+    nav {
+      background-color: rgba(245, 245, 220, 0.44);
+
+      display: flex;
+      justify-content: space-around;
+      padding: 1.5rem 0.5em;
+      position: sticky;
+      top: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      padding: 8px;
+
+      margin-right: 100px;
+      position: sticky;
+
+
+    }
+
+    #navelts li>a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: darkblue;
+      text-align: center;
+      font-size: small;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-weight: bold;
+
+    }
+
+    #navelts li>a:hover {
+      font-weight: 900;
+      font-size: larger;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vw;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+
+
+
+    }
+
+    .card {
+
+      margin: 60px;
+      border: 1px solid grey;
+      box-shadow: 10px 10px 12px 12px grey;
+
+      padding: -1 0 200px;
+      background-color: white;
+      width: fit-content;
+      height: fit-content;
+      background-image: url("../image pour le projet/wwww.jpg");
+
+
+    }
+
+    .card>img {
+
+      margin-left: 130px;
+      margin-top: 30px;
+
+    }
+
+    .card .text {
+      padding: 0 20px 20px;
+      color: wheat;
+
+
+    }
+
+    .card .text>button {
+      background-color: rgba(128, 128, 128, 0.362);
+      border: 0;
+      color: darkblue;
+      padding: 10px;
+      width: 100%;
+      margin-top: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: larger;
+    }
+
+    #foot {
+      display: flex;
+      justify-content: space-around;
+      color: darkblue;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: large;
+      margin: 130px;
+    }
+
+    ul li {
+      list-style: none;
+
+    }
+
+    li>a {
+      color: darkblue;
+      text-decoration: none;
+    }
+
+    #image {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .parag {
+      color: darkblue;
+    }
+
+    button a {
+      text-decoration: none;
+      color: darkblue;
+    }
+
+    @media screen and (max-width : 800px) {
+      html {
+        font-size: 80%;
+      }
+    }
+
+    @media screen and (max-width : 760px) {
+      .cards {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .cards {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      .cards {
+        width: 90%;
+      }
+
+      section {
+        width: 100vw;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0em 0em;
+      }
+
+      header {
+        padding: 1rem;
+      }
+
+      #foot {
+        flex-direction: column;
+        gap: 1.2rem;
+        margin: .5rem 2rem;
+      }
+
+      nav li {
+        display: block;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <div id="navelts">
+
+        <li><a href="#">acceuil</a></li>
+
+
+        <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagehtml.html">html</a></li>
+
+        <li> <a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagecss.html">css</a></li>
+
+        <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page javascript.html">javascript</a></li>
+
+        <li><a href="C:\Users\fatma\OneDrive\Bureau\projet web\pageformulaire.html">contacter nous</a></li>
+      </div>
+    </ul>
+  </nav>
+  <header>
+    <div id="titre">
+
+
+      <h1>Le developpement web c'est quoi?le metier du developpeur</h1>
+    </div>
+    <p> Le développement Web désigne de manière générale les tâches associées au développement de sites Web destinés à
+      être hébergés via un intranet ou Internet.
+      Le processus de développement web comprend, entre autres, la conception de sites web, le développement de contenu
+      web, l’élaboration de scripts côté client ou côté serveur et la configuration de la sécurité du réseau.
+      Le développement Web est le codage ou la programmation qui permet de faire fonctionner un site Web, selon les
+      exigences du propriétaire.
+      Il traite principalement de l’aspect non conceptuel de la création de sites Web, qui comprend le codage et
+      l’écriture du balisage.</p><br>
+    <p>Les trois principaux types de développeurs sont front-end, back-end et full-stack.
+
+      Les développeurs front-end s’occupent de la partie d’un site Web que les gens voient et avec laquelle ils
+      interagissent. </p><br>
+
+    </div>
+  </header>
+
+  <section>
+    <main class="cards">
+      <article class="card">
+
+        <img src=" C:\Users\fatma\OneDrive\Bureau\projet web\image pour le projet\html.png" alt="html" width=70px;
+          height=70px;>
+        <div class="text">
+          <h2>HTML</h2>
+          <p class="parag">HTML signifie "HyperText Markup Language". C’est un langage qui permet de composer des pages
+            web. On parle de langage de balisage et non de langage de programmation, car le but du HTML est d’encadrer
+            les différents éléments présents dans une page (images, titres, paragraphes ...) par des balises pour leur
+            permettre d’être mis en forme secondairement (via une feuille de style) et pour leur donner du sens</p>
+          <button><a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagehtml.html">Here's how</a></button>
+        </div>
+      </article>
+
+      <article class="card">
+
+        <img src="C:\Users\fatma\OneDrive\Bureau\projet web\image pour le projet\css.png " alt="css" width=70px;
+          height=70px;>
+        <div class="text">
+          <h2>CSS</h2>
+
+          <p class="parag"> Le développement du troisième niveau des feuilles de styles en cascade commence dès 1999,
+            parallèlement à celui de CSS 2.1. CSS3 devient « modulaire », afin de faciliter ses mises à jour, mais aussi
+            son implémentation par des agents utilisateurs aux capacités et aux besoins de plus en plus variés
+            (navigateurs graphiques, navigateurs pour mobiles, navigateurs vocaux). Les navigateurs peuvent ainsi
+            implémenter des sous-ensembles de CSS3.</p>
+          <button><a href="C:\Users\fatma\OneDrive\Bureau\projet web\pagecss.html">Here's how</a></button>
+        </div>
+      </article>
+      <article class="card">
+
+
+        <img src="C:\Users\fatma\OneDrive\Bureau\projet web\image pour le projet\js.jpg" alt="js" width=135px;
+          height=70px;>
+
+        <div class="text">
+          <h2>JAVA SCRIPT</h2>
+
+          <p class="parag"> JAVASCRIPT est un langage de programmation de scripts principalement employé dans les pages
+            web interactives mais aussi pour les serveurs2. C’est un langage orienté objet à prototype, càd que les
+            bases du langage et ses principales interfaces sont fournies par des objets qui ne sont pas des instances de
+            classes, mais qui sont chacun équipés de constructeurs permettant de créer leurs propriétés, et notamment
+            une propriété de prototypage qui permet d’en créer des objets héritiers personnalisés.</p>
+          <button><a href="C:\Users\fatma\OneDrive\Bureau\projet web\page javascript.html ">Read more</a></button>
+        </div>
+      </article>
+
+
+
+    </main>
+  </section>
+
+
+
+
+
+  <footer>
+    <div class="container">
+      <div id="foot">
+        <div class="1">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Web design</a></li>
+            <li><a href="#">Developpement</a></li>
+            <li><a href="#">Hosting</a></li>
+          </ul>
+        </div>
+        <div class="2">
+          <h3>concernant</h3>
+          <ul>
+            <li><a href="#">Compangnies</a></li>
+            <li><a href="#">equipes</a></li>
+            <li><a href="#">heritage</a></li>
+          </ul>
+        </div>
+        <div class="3">
+          <h3>Carieres</h3>
+          <ul>
+            <li><a href="#">offre d'emploie</a></li>
+            <li><a href="#">succes a l'emploie</a></li>
+            <li><a href="#">avantages</a></li>
+          </ul>
+        </div>
+        <div class="4">
+          <h3>contact</h3>
+          <ul>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
